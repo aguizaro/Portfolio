@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <title>Tony Guizar</title>
   </head>
   <body>
@@ -14,27 +16,114 @@
       </nav>
       <header>
         <h1>Tony Guizar</h1>
-        <p>Video Game Programmer</p>
+        <p id="subhead">Software Developer, Game Designer</p>
       </header>
 
       <main>
         <section id="about">
           <h2>About Me</h2>
           <p>
-            Welcome to my personal website. I am a Video Game Programmer
-            with a focus on creating user-friendly and interactive web
-            experiences.
+            Hey, I'm Tony, a passionate software developer on a mission to craft engaging experiences and practical tools. My expertise lies in JavaScript, where I work with frameworks like Phaser for game development, leveraging build tools like Vite. I have built web applications using the Flask framework for python and SQLite for database managment. I specialize in designing game systems and mechanics for both digital and analog games. 
+          </p>
+          <p>
+            My experience in Python includes the development of various artificial intelligence tools. Noteworthy projects include a procedural level generator using genetic algorithms for a Super Mario World clone, an npc behavior model using behavior trees for a Planet Wars simulator, and a hierarchical task network planner for AI agents in Minecraft.
+          </p>
+          <p>
+            Beyond game development, I manage network servers for my home lab, running a suite of services including Pi-Hole, Apache, NAS, and a redundant and automatically synchronized Media Server. 
+            I've handled diverse IT projects such as maintaining SMTP and POP servers for mail services, on-call 24/7 server maintenance , and assisting in a colocation data center facility.
+            These projects have taught me: subnet design / IPV4 address , Unix/linux environment and tools, server troubleshooting, internet routing and security, network automation, and Wireless radio transmission. This understanding allowed me to effectively navigate and troubleshoot issues across the various network layers, contributing to my overall expertise in network architecture.
           </p>
         </section>
   
         <section id="portfolio">
           <h2>Portfolio</h2>
-          <p>Check out some of my latest projects:</p>
+
+          <div class="project-container">
+            <a href="https://github.com/aguizaro/" class="game-title">Personalized News App</a>
+            <div class="project-description">
+              <p>
+                This web application is a personalized site for reading news articles and blogs tailored specifically to topics I find interesting: technology, football, and video games. It is built using the Flask micro web framework for Python and relies on an SQLite database.
+            
+                The application includes a Python script that sends requests to the <a href="https://newsapi.org/">News API</a> and writes the responses to the database. This script is automated to run nightly using GitHub Actions, ensuring that the articles displayed on the site are regularly updated. To retrieve the full article content (as News API truncates responses at 200 characters), the script performs HTTP requests to the article URL and parses the content using Beautiful Soup.  
+              </p>
+              <p>
+                <strong>Note:</strong> As this project is still in development, additional features are being implemented. These include creating new blog posts, user authentication, and view filters.
+              </p>
+            </div>
+            <div class="project-media">
+              <div class="stacked-imgs">
+                <img src="../img/news/news_img3.png">
+                <img src="../img/news/imgcapture2.png">
+              </div>
+              <img src="../img/news/news_img2.png">
+              <img src="../img/news/news_img5.png">
+            </div>
+          </div>
+
+          <div class="project-container">
+            <a href="https://aguizaro.github.io/Chinatown/" class="game-title">Chinatown 1974</a>
+            <div class="project-description">
+              <p>This is a video game adaptation of the 1974 film 'Chinatown'. Chinatown is a 1974 American neo-noir mystery film directed by Roman Polanski from a screenplay by Robert Towne, starring Jack Nicholson and Faye Dunaway. The film was inspired by the California water wars, a series of disputes over southern California water at the beginning of the 20th century, by which Los Angeles interests secured water rights in the Owens Valley.</p>
+              <p>This game was made as a class project. It is written in JavaScript and uses the Phaser 3, a desktop and mobile HTML5 game framework. The game world is constructed using Tiled, a map editor that allows for the creation of intricate tilemaps, contributing to the immersive gaming experience. </p>
+            </div>
+            <div class="project-media">
+              <img src="../img/chinatown/ezgif.com-crop.gif">
+              <img src="../img/chinatown/ezgif.com-gif-maker.gif">
+              <img src="../img/chinatown/ezgif.com-video-to-gif.gif">
+            </div>
+          </div>
+
+          <div class="project-container">
+            <a href="https://aguizaro.github.io/stickerPAD/" class="game-title">stickerPAD</a>
+            <div class="project-description">
+              <p>This sketch pad program is crafted with Typescript and developed using Vite. It offers a creative space for users to draw and express themselves. Enjoy the playful addition of emoji stickers to add a touch of fun to your sketches!</p>
+            </div>
+            <div class="project-media">
+              <img src="../img/stickerPAD/imgcap2.png">
+              <img src="../img/stickerPAD/imgcap1.png">
+              <img src="../img/stickerPAD/ezgif2.gif">
+            </div>
+          </div>
+
+          <div class="project-container">
+            <a href="https://github.com/aguizaro/" class="game-title">Rapid Delivery</a>
+            <div class="project-description">
+              <p>
+                I conceptualized and crafted this board game as part of a class project. In this game, players take turns collecting delivery tickets, fulfilling orders, and acquiring power-ups. The objective is to complete as many deliveries as possible by the end of the week, with each game round representing a different day of the week.
+              </p>
+              <p>
+                Offering a fast-paced experience, this board game is designed for 2-4 players. All game assets, from initial prototypes to final designs, were created using Adobe Illustrator.
+              </p>
+              
+            </div>
+            <div class="project-media">
+              <div class="stacked-imgs">
+                <img src="../img/rapid-delivery/DeliveryTickets.png">
+                <img src="../img/rapid-delivery/GameBoard.png">
+              </div>
+              <img src="../img/rapid-delivery/gameRules.png">
+              <img src="../img/rapid-delivery/EffectCards.png">
+            </div>
+          </div>
+
+          
+         
         </section>
   
         <section id="contact">
           <h2>Contact</h2>
           <p>Let's get in touch! Reach out to me via email or social media.</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/antonioguizarorozco" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"> LinkedIn</i>
+            </a>
+            <a href="https://github.com/aguizaro" target="_blank" title="GitHub">
+                <i class="fab fa-github"> GitHub</i>
+            </a>
+            <a href="mailto:aguizaro@ucsc.edu" target="_blank" title="Email">
+                <i class="far fa-envelope"> Email</i>
+            </a>
+        </div>
         </section>
       </main>
       <footer>
