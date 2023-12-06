@@ -24,14 +24,14 @@
         <section id="about">
           <h2>About Me</h2>
           <p>
-            Hey, I'm Tony, a passionate software developer on a mission to craft engaging experiences and practical tools. My expertise lies in JavaScript, where I work with frameworks like Phaser for game development, leveraging build tools like Vite. I have built web applications using the Flask framework for python and SQLite for database managment. I specialize in designing game systems and mechanics for both digital and analog games. 
+            Hey, I'm Tony, a passionate software developer on a mission to craft engaging experiences and practical tools. My expertise lies in JavaScript, where I work with frameworks like Phaser for game development, leveraging build tools like Vite. I have built web applications using the Flask framework for python and SQLite for database management. I specialize in designing game systems and mechanics for both digital and analog games. 
           </p>
           <p>
             My experience in Python includes the development of various artificial intelligence tools. Noteworthy projects include a procedural level generator using genetic algorithms for a Super Mario World clone, an npc behavior model using behavior trees for a Planet Wars simulator, and a hierarchical task network planner for AI agents in Minecraft.
           </p>
           <p>
-            Beyond game development, I manage network servers for my home lab, running a suite of services including Pi-Hole, Apache, NAS, and a redundant and automatically synchronized Media Server. 
-            I've handled diverse IT projects such as maintaining SMTP and POP servers for mail services, on-call 24/7 server maintenance , and assisting in a colocation data center facility.
+            Beyond game development, I manage network servers for my home lab, running a suite of services including Pi-Hole, Apache web server, NAS for media storage, and an automatically synchronized Plex media server. 
+            I've handled diverse IT projects such as maintaining SMTP and POP servers for mail services, on-call 24 hour server maintenance , and assisting in a colocation data center facility.
             These projects have taught me: subnet design / IPV4 address , Unix/linux environment and tools, server troubleshooting, internet routing and security, network automation, and Wireless radio transmission. This understanding allowed me to effectively navigate and troubleshoot issues across the various network layers, contributing to my overall expertise in network architecture.
           </p>
         </section>
@@ -45,10 +45,7 @@
               <p>
                 This web application is a personalized site for reading news articles and blogs tailored specifically to topics I find interesting: technology, football, and video games. It is built using the Flask micro web framework for Python and relies on an SQLite database.
             
-                The application includes a Python script that sends requests to the <a href="https://newsapi.org/">News API</a> and writes the responses to the database. This script is automated to run nightly using GitHub Actions, ensuring that the articles displayed on the site are regularly updated. To retrieve the full article content (as News API truncates responses at 200 characters), the script performs HTTP requests to the article URL and parses the content using Beautiful Soup.  
-              </p>
-              <p>
-                <strong>Note:</strong> As this project is still in development, additional features are being implemented. These include creating new blog posts, user authentication, and view filters.
+                The application includes a Python script that sends requests to the <a href="https://newsapi.org/">News API</a> and writes the responses to the database. To retrieve the full article content (as News API truncates responses at 200 characters), the script performs HTTP requests to the article URL and parses the content using Beautiful Soup.  
               </p>
             </div>
             <div class="project-media">
